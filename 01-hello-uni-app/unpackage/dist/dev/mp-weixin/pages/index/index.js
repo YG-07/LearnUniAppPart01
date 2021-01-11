@@ -10,7 +10,21 @@
 /* 8 */,
 /* 9 */,
 /* 10 */,
-/* 11 */,
+/* 11 */
+/*!*****************************************************************************************************!*\
+  !*** D:/UniAppProjects/LearnUniAppPart01/01-hello-uni-app/main.js?{"page":"pages%2Findex%2Findex"} ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
+var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+createPage(_index.default);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
+
+/***/ }),
 /* 12 */
 /*!**********************************************************************************!*\
   !*** D:/UniAppProjects/LearnUniAppPart01/01-hello-uni-app/pages/index/index.vue ***!
@@ -169,21 +183,6 @@ __webpack_require__.r(__webpack_exports__);
     if(false) { var cssReload; }
   
 
-/***/ }),
-/* 19 */
-/*!*****************************************************************************************************!*\
-  !*** D:/UniAppProjects/LearnUniAppPart01/01-hello-uni-app/main.js?{"page":"pages%2Findex%2Findex"} ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(createPage) {__webpack_require__(/*! uni-pages */ 4);
-var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index/index.vue */ 12));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-createPage(_index.default);
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createPage"]))
-
 /***/ })
-],[[19,"common/runtime","common/vendor"]]]);
+],[[11,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/index/index.js.map

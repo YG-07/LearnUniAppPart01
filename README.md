@@ -8,7 +8,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 
 # 二、知识总结大纲
 (数字表示视频分P)
-## 一、uni-app的简介和基本使用 (1-)
+## 一、uni-app的简介和基本使用 (1-5)
 ### 1.1 uni-app的简介
 * uni-app官方文档URL：https://uniapp.dcloud.io/README
 * uni-app 是一个使用 **Vue.js** 开发所有前端应用的框架，开发者编写一套代码，`可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台`。 
@@ -57,3 +57,53 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 ### 1.8 创建并配置页面
 * 在pages文件夹里新建页面文件夹和页面vue文件
 * 在pages.json里新建`page对象`，再配置`path属性`，默认第一个为主页.
+```JSON
+"pages": [ 
+	{
+		"path": "pages/index/index",
+		"style": {
+				"navigationBarTitleText": "App标题"
+		}
+	},
+	{
+		"path": "pages/message/message",
+		"style": {
+			"navigationBarTitleText": "信息标题"
+		}
+	}
+]
+```
+## 二、uniapp的界面设计
+### 2.1 导航栏tabbar
+* **tabBar**是pages.json里的一个根属性，封装的一个导航栏组件.
+  * 包括一个`list数组`，color/selectColor 2种文字颜色等属性.
+  * list数组包括多个tab对象，`最少2个、最多5个tab`!
+  * 一个tab对象包括页面路径、2个图标(未选中,选中)、文字
+* 使用如下：
+```JSON
+"tabBar": {
+  "color":"#000000",
+	"selectedColor":"#f39c12",
+	"list": [
+			{
+			"text":"首页",
+			"pagePath":"pages/index/index",
+			"iconPath":"static/tabs/home.png",
+			"selectedIconPath":"static/tabs/home_active.png"
+		},
+		{
+  		"text":"信息",
+			"pagePath":"pages/message/message",
+			"iconPath":"static/tabs/survey.png",
+			"selectedIconPath":"static/tabs/survey_active.png"
+		},
+		{
+			"text":"我的",
+			"pagePath":"pages/profile/profile",
+			"iconPath":"static/tabs/user.png",
+			"selectedIconPath":"static/tabs/user_active.png"
+		}
+	]
+}
+```
+* 注意：tabBar的`"position":"top"`属性仅支持微信小程序!
