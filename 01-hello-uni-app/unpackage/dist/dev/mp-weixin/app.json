@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "全局标题",
+    "navigationBarBackgroundColor": "#55efc4",
+    "backgroundColor": "#fd79a8",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "onReachBottomDistance": 50
+  },
+  "usingComponents": {}
+}

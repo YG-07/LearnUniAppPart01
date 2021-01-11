@@ -1,2 +1,59 @@
 # LearnUniAppPart01
-学习uni-app框架  uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。 
+学习uni-app框架  
+uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。 
+
+# 一、资料来源
+（B站Up主**玩儿派**转载自 杭州校区黑马程序员**刘老师**）  
+(1-p)B站视频：https://www.bilibili.com/video/BV1CC4y1476y?p=1
+
+# 二、知识总结大纲
+(数字表示视频分P)
+## 一、uni-app的简介和基本使用 (1-)
+### 1.1 uni-app的简介
+* uni-app官方文档URL：https://uniapp.dcloud.io/README
+* uni-app 是一个使用 **Vue.js** 开发所有前端应用的框架，开发者编写一套代码，`可发布到iOS、Android、Web（响应式）、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台`。 
+### 1.2 为什么要选择uni-app
+主要特点和优势：  
+1. 开发者/案例数量更多
+2. 平台能力不受限
+3. 性能体验优秀
+4. 周边生态丰富
+5. 学习成本低
+6. 开发成本低
+### 1.3 搭建uni-app环境
+* 安装编辑器HBuilderX：https://www.dcloud.io/hbuilderx.html
+* 安装微信开发者工具：https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
+* 除此之外，可以下载模拟器等
+### 1.4 创建和运行uni-app项目
+* 打开HBuilderX程序，新建项目，选择uni-app(默认模板)
+* 运行项目(各种平台)，运行解决方法：https://uniapp.dcloud.io/quickstart
+  * Chrome运行
+  * 微信开发者工具运行(微信小程序)-第一次运行时：要在编辑器运行配置里填**工具路径**，然后**打开并登陆**工具的端口
+  * 手机或模拟器：模打开拟器在所在目录使用指令：`adb devices`查看开放端口号，然后填入编辑器的运行端口.手机方式略.
+### 1.5 项目目录介绍
+官方介绍URL：https://uniapp.dcloud.io/frame?id=%e5%bc%80%e5%8f%91%e8%a7%84%e8%8c%83  
+一个uni-app工程，默认包含如下目录及文件：  
+```
+┌─pages                 业务页面文件存放的目录
+│  └─index
+│     └─index.vue       index页面
+├─static                存放应用引用静态资源（如图片、视频等）的目录，注意：静态资源只能存放于此
+├─App.vue               应用配置，用来配置App全局样式以及监听 应用生命周期
+├─main.js               Vue初始化入口文件
+├─manifest.json         配置应用名称、appid、logo、版本等打包信息等
+├─pages.json            配置页面路由、导航条、选项卡等页面类信息等
+└─uni.scss              uni-app内置的常用样式变量
+```
+### 1.6 uni-app开发规范
+1. Vue单文件组件 (SFC) 规范：https://vue-loader.vuejs.org/zh/spec.html
+2. uni-app组件规范：https://uniapp.dcloud.io/component/README
+3. 接口能力(JS API) 靠近微信小程序规范，但前缀将`wx`改为`uni`.uni-app接口规范：https://uniapp.dcloud.io/api/README
+4. 数据绑定及事件处理同 Vue.js 规范，同时补充了**App及页面的生命周期**
+5. 为兼容多端运行，建议使用**flex布局**进行开发
+### 1.7 配置pages.json
+官方的pages.json配置介绍URL：https://uniapp.dcloud.io/collocation/pages  
+* pages页面属性
+* globalStyle全局属性
+### 1.8 创建并配置页面
+* 在pages文件夹里新建页面文件夹和页面vue文件
+* 在pages.json里新建`page对象`，再配置`path属性`，默认第一个为主页.

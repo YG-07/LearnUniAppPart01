@@ -1,0 +1,32 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "App标题"
+			}
+			//app-plus	设置编译到 App 平台的特定样式
+			// h5	设置编译到 H5 平台的特定样式
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "message组件标题"
+			}
+		}
+	],
+	"globalStyle": {
+		// 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "全局标题",
+		// 导航条背景
+		"navigationBarBackgroundColor": "#55efc4",
+		// 页面下拉时背景
+		"backgroundColor": "#fd79a8",
+		"enablePullDownRefresh": true,
+		// 下拉 loading 的样式，仅支持 dark / light
+		"backgroundTextStyle": "light",
+		// 页面上拉触底事件触发时距页面底部距离，单位只支持px，详见页面生命周期
+		"onReachBottomDistance": 50
+	}
+}
