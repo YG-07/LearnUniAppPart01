@@ -1,0 +1,18 @@
+
+.box {
+	width: 300rpx;
+	height: 300rpx;
+	background-color: #e84393;
+}
+.box1 {
+	width: 500rpx;
+	height: 500rpx;
+	background-color: #fdcb6e;
+}
+.box-active {
+	background-color: #fab1a0;
+}
+.box1-active {
+	background-color: #00b894;
+}
+

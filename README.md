@@ -73,7 +73,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 	}
 ]
 ```
-## 二、uniapp的界面设计
+## 二、uniapp的界面设计 (6-8)
 ### 2.1 导航栏tabbar
 * **tabBar**是pages.json里的一个根属性，封装的一个导航栏组件.
   * 包括一个`list数组`，color/selectColor 2种文字颜色等属性.
@@ -107,3 +107,59 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 }
 ```
 * 注意：tabBar的`"position":"top"`属性仅支持微信小程序!
+### 2.2 启动模式配置condition
+* 启动模式配置，仅开发期间生效，用于模拟直达页面的场景，如：小程序转发后，用户点击所打开的页面。
+```JSON
+"condition": {
+		"current": 0,
+		"list": [
+			{
+				"name":"详情页面",
+				"path":"pages/detail/detail",
+				"query":"id=80"
+			}
+		]
+	}
+```
+## 三、组件的基本使用 (9-)
+* uni-app提供了非常丰富的组件，组件-官方文档URL：https://uniapp.dcloud.io/component/README
+组件分类主要有：
+[视图容器](https://uniapp.dcloud.io/component/view)
+[基础内容](https://uniapp.dcloud.io/component/icon)
+[表单组件](https://uniapp.dcloud.io/component/button)
+[路由与页面跳转](https://uniapp.dcloud.io/component/navigator)
+[媒体组件](https://uniapp.dcloud.io/component/audio)
+[地图](https://uniapp.dcloud.io/component/map)
+[画布](https://uniapp.dcloud.io/component/canvas)
+[webview](https://uniapp.dcloud.io/component/web-view)
+[广告](https://uniapp.dcloud.io/component/ad)
+[导航类组件](https://uniapp.dcloud.io/component/navigation-bar)
+[页面属性配置节点](https://uniapp.dcloud.io/component/page-meta)
+[小程序开放能力组件](https://uniapp.dcloud.io/component/official-account)
+[App_nvue专用组件](https://uniapp.dcloud.io/component/barcode)
+[扩展组件（uni_ui）](https://uniapp.dcloud.io/component/README?id=uniui)
+[uniCloud组件](https://uniapp.dcloud.io/uniCloud/unicloud-db)
+[datacom组件规范](https://uniapp.dcloud.io/component/datacom)
+[配置小程序插件](https://uniapp.dcloud.io/component/mp-weixin-plugin)
+[原生组件说明](https://uniapp.dcloud.io/component/native-component)
+### 3.1 text文本组件
+* selectable文本是否可选、space	显示连续空格、decode是否解码
+  * ensp	中文字符空格一半大小
+  * emsp	中文字符空格大小
+  * nbsp	根据字体设置的空格大小
+### 3.2 view视图容器
+* 它类似于传统html中的div，用于包裹各种元素内容。
+* hover-class属性：指定按下去的`样式类`。当 hover-class="none" 时，没有点击态效果
+* hover-stop-propagation属性：在嵌套内的view使用，false时阻止冒泡
+* :hover-stay-time延长效果时间，毫秒数字
+* :hover-start-time延迟出现效果时间，毫秒数字
+### 3.3 button按钮组件
+* size尺寸：default、mini
+* type样式：primary、default、warn
+  * primary：微信小程序、360小程序为绿色，App、H5、百度小程序、支付宝小程序、快应用为蓝色，字节跳动小程序为红色，QQ小程序为浅蓝色。如想在多端统一颜色，请改用default，然后自行写样式.
+  * default：白色
+  * warn：红色
+* loading: 前面添加一个加载图标
+
+------
+
