@@ -108,6 +108,10 @@ var render = function() {
     _vm.e0 = function($event) {
       return _vm.$router.push("../detail/detail")
     }
+
+    _vm.e1 = function($event) {
+      return _vm.$router.push("../uni-style/uni-style")
+    }
   }
 }
 var recyclableRender = false
@@ -141,6 +145,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
 //
 //
 //

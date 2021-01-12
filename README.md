@@ -168,4 +168,21 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 	* aspectFill	保持纵横比缩放图片，只保证图片的短边能完全显示出来。
 	* widthFix	宽度不变，高度自动变化，保持原图宽高比不变
 	* heightFix	高度不变，宽度自动变化，保持原图宽高比不变
-	### 3.5 uni的样式和scss和字体图标
+### 3.5 uni的样式和scss和字体图标
+* rpx单位：跟upx一样，只不过upx没有rpx算的准，两者有一点点的差距，推荐使用rpx
+* @import语句：导入样式，优先级：行内样式\>局部样式\>导入样式
+* uni的选择器有`class、id、element`等，但没有 `*` 选择器
+* 导入字体图标：通过iconfont官网下载URL：https://www.iconfont.cn/
+	* 先选择需要的图标，加入购物车
+	* 添加到项目，下载到本地
+	* 解压到项目static文件夹，修改iconfont.css文件的导入方式：`'~@/static/字体文件夹/....'`
+	* 在App.vue中@import导入iconfont.css，然后在组件中通过class使用(iconfont属性必要)，如：
+```HTML
+<view class="iconfont icon-picture"></view>
+<view class="iconfont icon-camera"></view>
+```
+* 使用scss文件，需要在插件市场下载URL：https://ext.dcloud.net.cn/?cat1=1&cat2=11
+	* 下载scss插件，样式标签改成`<style lang="scss">`即可
+	* 作用就是：可以通过``$变量名``使用全局的uni.scss文件的变量
+
+

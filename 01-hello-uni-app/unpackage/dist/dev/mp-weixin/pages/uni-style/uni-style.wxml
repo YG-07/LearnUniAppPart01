@@ -1,0 +1,1 @@
+<view><view>uni的样式学习</view><view class="box1">box</view><view class="iconfont icon-picture"></view><view class="iconfont icon-camera"></view><view class="iconfont icon-time"></view><view><text class="tx1">scss样式文字</text></view></view>

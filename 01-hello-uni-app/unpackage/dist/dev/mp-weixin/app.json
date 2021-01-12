@@ -1,44 +1,46 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/message/message",
-    "pages/profile/profile",
-    "pages/detail/detail"
-  ],
-  "subPackages": [],
-  "window": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "全局标题",
-    "navigationBarBackgroundColor": "#55efc4",
-    "backgroundColor": "#fd79a8",
-    "enablePullDownRefresh": true,
-    "backgroundTextStyle": "light",
-    "onReachBottomDistance": 50
-  },
-  "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#f39c12",
-    "backgroundColor": "#ecf0f1",
-    "list": [
-      {
-        "text": "首页",
-        "pagePath": "pages/index/index",
-        "iconPath": "static/tabs/home.png",
-        "selectedIconPath": "static/tabs/home_active.png"
-      },
-      {
-        "text": "信息",
-        "pagePath": "pages/message/message",
-        "iconPath": "static/tabs/survey.png",
-        "selectedIconPath": "static/tabs/survey_active.png"
-      },
-      {
-        "text": "我的",
-        "pagePath": "pages/profile/profile",
-        "iconPath": "static/tabs/user.png",
-        "selectedIconPath": "static/tabs/user_active.png"
-      }
-    ]
-  },
-  "usingComponents": {}
+    "pages": [
+        "pages/index/index",
+        "pages/message/message",
+        "pages/profile/profile",
+        "pages/detail/detail",
+        "pages/uni-style/uni-style"
+    ],
+    "subPackages": [],
+    "window": {
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "全局标题",
+        "navigationBarBackgroundColor": "#55efc4",
+        "backgroundColor": "#fd79a8",
+        "enablePullDownRefresh": true,
+        "backgroundTextStyle": "light",
+        "onReachBottomDistance": 50
+    },
+    "tabBar": {
+        "color": "#000000",
+        "selectedColor": "#f39c12",
+        "backgroundColor": "#ecf0f1",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "static/tabs/home.png",
+                "selectedIconPath": "static/tabs/home_active.png"
+            },
+            {
+                "text": "信息",
+                "pagePath": "pages/message/message",
+                "iconPath": "static/tabs/survey.png",
+                "selectedIconPath": "static/tabs/survey_active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/profile/profile",
+                "iconPath": "static/tabs/user.png",
+                "selectedIconPath": "static/tabs/user_active.png"
+            }
+        ]
+    },
+    "usingComponents": {},
+    "sitemapLocation": "sitemap67.json"
 }

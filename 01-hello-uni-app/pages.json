@@ -80,8 +80,11 @@
 		"list": [
 			{
 				"name":"详情页面",
-				"path":"pages/detail/detail",
-				"query":"id=80"
+				"path":"pages/detail/detail"
+			},
+			{
+				"name":"样式页面",
+				"path":"pages/uni-style/uni-style"
 			}
 		]
 	}
