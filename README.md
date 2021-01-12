@@ -4,7 +4,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 
 # 一、资料来源
 （B站Up主**玩儿派**转载自 杭州校区黑马程序员**刘老师**）  
-(1-p)B站视频：https://www.bilibili.com/video/BV1CC4y1476y?p=1
+(1-19p)B站视频：https://www.bilibili.com/video/BV1CC4y1476y?p=1
 
 # 二、知识总结大纲
 (数字表示视频分P)
