@@ -124,24 +124,24 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 ## 三、组件的基本使用 (9-)
 * uni-app提供了非常丰富的组件，组件-官方文档URL：https://uniapp.dcloud.io/component/README
 组件分类主要有：
-[视图容器](https://uniapp.dcloud.io/component/view)
-[基础内容](https://uniapp.dcloud.io/component/icon)
-[表单组件](https://uniapp.dcloud.io/component/button)
-[路由与页面跳转](https://uniapp.dcloud.io/component/navigator)
-[媒体组件](https://uniapp.dcloud.io/component/audio)
-[地图](https://uniapp.dcloud.io/component/map)
-[画布](https://uniapp.dcloud.io/component/canvas)
-[webview](https://uniapp.dcloud.io/component/web-view)
-[广告](https://uniapp.dcloud.io/component/ad)
-[导航类组件](https://uniapp.dcloud.io/component/navigation-bar)
-[页面属性配置节点](https://uniapp.dcloud.io/component/page-meta)
-[小程序开放能力组件](https://uniapp.dcloud.io/component/official-account)
-[App_nvue专用组件](https://uniapp.dcloud.io/component/barcode)
-[扩展组件（uni_ui）](https://uniapp.dcloud.io/component/README?id=uniui)
-[uniCloud组件](https://uniapp.dcloud.io/uniCloud/unicloud-db)
-[datacom组件规范](https://uniapp.dcloud.io/component/datacom)
-[配置小程序插件](https://uniapp.dcloud.io/component/mp-weixin-plugin)
-[原生组件说明](https://uniapp.dcloud.io/component/native-component)
+* [视图容器](https://uniapp.dcloud.io/component/view)
+* [基础内容](https://uniapp.dcloud.io/component/icon)
+* [表单组件](https://uniapp.dcloud.io/component/button)
+* [路由与页面跳转](https://uniapp.dcloud.io/component/navigator)
+* [媒体组件](https://uniapp.dcloud.io/component/audio)
+* [地图](https://uniapp.dcloud.io/component/map)
+* [画布](https://uniapp.dcloud.io/component/canvas)
+* [webview](https://uniapp.dcloud.io/component/web-view)
+* [广告](https://uniapp.dcloud.io/component/ad)
+* [导航类组件](https://uniapp.dcloud.io/component/navigation-bar)
+* [页面属性配置节点](https://uniapp.dcloud.io/component/page-meta)
+* [小程序开放能力组件](https://uniapp.dcloud.io/component/official-account)
+* [App_nvue专用组件](https://uniapp.dcloud.io/component/barcode)
+* [扩展组件（uni_ui）](https://uniapp.dcloud.io/component/README?id=uniui)
+* [uniCloud组件](https://uniapp.dcloud.io/uniCloud/unicloud-db)
+* [datacom组件规范](https://uniapp.dcloud.io/component/datacom)
+* [配置小程序插件](https://uniapp.dcloud.io/component/mp-weixin-plugin)
+* [原生组件说明](https://uniapp.dcloud.io/component/native-component)
 ### 3.1 text文本组件
 * selectable文本是否可选、space	显示连续空格、decode是否解码
   * ensp	中文字符空格一半大小
@@ -160,6 +160,12 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
   * default：白色
   * warn：红色
 * loading: 前面添加一个加载图标
-
-------
-
+### 3.4 image图片组件
+* src属性：支持本地和在线图片
+* mode：有13种模式
+	* scaleToFill	不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素
+	* aspectFit	保持纵横比缩放图片，使图片的长边能完全显示出来。
+	* aspectFill	保持纵横比缩放图片，只保证图片的短边能完全显示出来。
+	* widthFix	宽度不变，高度自动变化，保持原图宽高比不变
+	* heightFix	高度不变，宽度自动变化，保持原图宽高比不变
+	### 3.5 uni的样式和scss和字体图标

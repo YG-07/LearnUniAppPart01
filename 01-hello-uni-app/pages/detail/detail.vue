@@ -51,19 +51,20 @@
 			</view>
 		</view>
 		
+		<view class="part04-image" style="border: 1upx #4CD964 solid;">
+			<!-- scaleToFill默认宽度 300px、高度 225px -->
+			<image src="http://destiny001.gitee.io/image/cxk.gif"></image>
+			<!-- aspectFit长边显示出来 -->
+			<image src="http://destiny001.gitee.io/image/cxk.gif" mode="aspectFit"></image>
+			<!-- aspectFill短边显示出来 -->
+			<image src="http://destiny001.gitee.io/image/cxk.gif" mode="aspectFill"></image>
+		</view>
+	
+	
 	</view>
 </template>
 
 <script>
-	export default {
-        methods: {
-            goto(url) {
-                uni.navigateTo({
-                    url:url
-                })
-            }
-        }
-    }
 </script>
 
 <style>

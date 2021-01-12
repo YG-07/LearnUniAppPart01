@@ -1,5 +1,7 @@
 <template>
-	<view>Hello, Uni-app</view>
+	<view>
+		hi
+	</view>
 </template>
 
 <script>

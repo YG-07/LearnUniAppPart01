@@ -4,7 +4,8 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<button @click="$router.push('../detail/detail')">详情</button>
+		<button @click="$router.push('../detail/detail')">案例详情</button>
+		<button @click="$router.push('../uni-style/uni-style')">样式详情</button>
 		<!-- <navigator url="pages/detail/detail"><button type="default">详情</button></navigator> -->
 	</view>
 </template>
