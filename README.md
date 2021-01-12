@@ -121,7 +121,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 		]
 	}
 ```
-## 三、组件的基本使用 (9-)
+## 三、组件的基本使用，vuejs的基础知识 (9-16)
 * uni-app提供了非常丰富的组件，组件-官方文档URL：https://uniapp.dcloud.io/component/README
 组件分类主要有：
 * [视图容器](https://uniapp.dcloud.io/component/view)
@@ -184,5 +184,10 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 * 使用scss文件，需要在插件市场下载URL：https://ext.dcloud.net.cn/?cat1=1&cat2=11
 	* 下载scss插件，样式标签改成`<style lang="scss">`即可
 	* 作用就是：可以通过``$变量名``使用全局的uni.scss文件的变量
+**(下面标题的知识与Vuejs的方式一样)**  
+### 3.6 uni的数据绑定和插值(mustache)语法
+### 3.7 v-bind动态绑定属性，v-for循环遍历
+### 3.8 v-on事件和参数传递，事件对象$event
+## 四、uni-app的生命周期函数 (17)
 
 
