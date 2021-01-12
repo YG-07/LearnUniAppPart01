@@ -57,7 +57,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 ### 1.8 创建并配置页面
 * 在pages文件夹里新建页面文件夹和页面vue文件
 * 在pages.json里新建`page对象`，再配置`path属性`，默认第一个为主页.
-```JSON
+```javaScript
 "pages": [ 
 	{
 		"path": "pages/index/index",
@@ -80,7 +80,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
   * list数组包括多个tab对象，`最少2个、最多5个tab`!
   * 一个tab对象包括页面路径、2个图标(未选中,选中)、文字
 * 使用如下：
-```JSON
+```javaScript
 "tabBar": {
   "color":"#000000",
 	"selectedColor":"#f39c12",
@@ -109,7 +109,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 * 注意：tabBar的`"position":"top"`属性仅支持微信小程序!
 ### 2.2 启动模式配置condition
 * 启动模式配置，仅开发期间生效，用于模拟直达页面的场景，如：小程序转发后，用户点击所打开的页面。
-```JSON
+```javaScript
 "condition": {
 		"current": 0,
 		"list": [
@@ -214,3 +214,7 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 * 在pages.json里为页面的style属性设置`"onReachBottomDistance":50`触底的距离，单位px
 * 在页面中指定处理函数`onReachBottom` 上拉触底函数
 * (了解)`扩展运算符`3个点(...)作用是：`展开数组，用逗号隔开`
+  
+---------------本节的知识-----------------
+---
+
