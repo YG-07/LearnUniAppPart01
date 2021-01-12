@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "list详情",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {}
+}

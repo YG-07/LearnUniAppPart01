@@ -106,11 +106,15 @@ var render = function() {
   var _c = _vm._self._c || _h
   if (!_vm._isMounted) {
     _vm.e0 = function($event) {
-      return _vm.$router.push("../detail/detail")
+      return _vm.$router.push("pages/detail/detail")
     }
 
     _vm.e1 = function($event) {
-      return _vm.$router.push("../uni-style/uni-style")
+      return _vm.$router.push("pages/uni-style/uni-style")
+    }
+
+    _vm.e2 = function($event) {
+      return _vm.$router.push("pages/list/list")
     }
   }
 }
@@ -156,6 +160,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -163,10 +168,23 @@ var _default =
       title: 'Hello' };
 
   },
-  onLoad: function onLoad() {
+  methods: {},
 
+
+  // onLoad参数为上一个页面的对象数据，这2个触发1次
+  onLoad: function onLoad(options) {
+    console.log('index页面加载了', options);
   },
-  methods: {} };exports.default = _default;
+  onReady: function onReady() {
+    console.log('页面初次渲染完成');
+  },
+  // show和hide 会多次触发
+  onShow: function onShow() {
+    console.log('页面显示了');
+  },
+  onHide: function onHide() {
+    console.log('页面隐藏了');
+  } };exports.default = _default;
 
 /***/ }),
 /* 17 */

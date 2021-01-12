@@ -89,14 +89,21 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
 {
+  // app初始化完成时触发（全局只触发一次）
   onLaunch: function onLaunch() {
     console.log('App Launch');
   },
+  // 从后台进入前台显示
   onShow: function onShow() {
     console.log('App Show');
   },
+  // 从前台进入后台
   onHide: function onHide() {
     console.log('App Hide');
+  },
+  // 报错时触发
+  onError: function onError() {
+    console.log('App Error');
   } };exports.default = _default;
 
 /***/ }),

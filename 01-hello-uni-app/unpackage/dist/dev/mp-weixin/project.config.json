@@ -35,6 +35,11 @@
           "name": "样式页面",
           "id": 1,
           "pathName": "pages/uni-style/uni-style"
+        },
+        {
+          "name": "List页面",
+          "id": 2,
+          "pathName": "pages/list/list"
         }
       ]
     }

@@ -189,5 +189,28 @@ uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编�
 ### 3.7 v-bind动态绑定属性，v-for循环遍历
 ### 3.8 v-on事件和参数传递，事件对象$event
 ## 四、uni-app的生命周期函数 (17)
-
-
+* 官方文档URL：https://uniapp.dcloud.io/frame?id=%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f
+### 4.1 [应用的生命周期(URL)](https://uniapp.dcloud.io/collocation/frame/lifecycle?id=%e5%ba%94%e7%94%a8%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f)
+应用的生命周期函数在`App.vue`里面,如：  
+* onLaunch 当uni-app 初始化完成时触发（全局只触发一次）
+* onShow 当 uni-app 启动，或从后台进入前台显示
+* onHide 当 uni-app 从前台进入后台
+* onError 当 uni-app 报错时触发
+### 4.2 [页面生命周期(URL)](https://uniapp.dcloud.io/collocation/frame/lifecycle?id=%e9%a1%b5%e9%9d%a2%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f)
+页面的生命周期函数在各个组件中，如：  
+* onLoad 监听页面加载，1个参数为上一个页面的对象数据
+* onReady 监听页面初次渲染完成。注意如果渲染速度快，会在页面进入动画完成前触发
+* onShow 监听页面显示，页面每次出现在屏幕上都触发
+* onHide 监听页面隐藏
+* onPullDownRefresh 监听用户下拉动作，一般用于下拉刷新
+* onReachBottom 页面滚动到底部的事件（不是scroll-view滚到底），常用于下拉下一页数据
+#### 4.2.1 onPullDownRefresh[下拉刷新(url)](https://uniapp.dcloud.io/api/ui/pulldown)
+* 在pages.json里为页面的style属性开启`"enablePullDownRefresh":true`下拉刷新属性
+* 然后在页面中指定处理函数（和onLoad等生命周期函数同级），如：
+	* `onPullDownRefresh` 监听该页面用户下拉刷新事件,并采取操作
+	* uni.`stopPullDownRefresh` 停止当前页面下拉刷新，可以添加定时器延时动画。如：在onLoad、刷新函数里使用
+* 可以使用点击事件调用uni.`startPullDownRefresh()`下拉刷新
+#### 4.2.2 onReachBottom 上拉加载
+* 在pages.json里为页面的style属性设置`"onReachBottomDistance":50`触底的距离，单位px
+* 在页面中指定处理函数`onReachBottom` 上拉触底函数
+* (了解)`扩展运算符`3个点(...)作用是：`展开数组，用逗号隔开`

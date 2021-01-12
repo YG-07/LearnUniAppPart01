@@ -4,8 +4,9 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<button @click="$router.push('../detail/detail')">案例详情</button>
-		<button @click="$router.push('../uni-style/uni-style')">样式详情</button>
+		<button @click="$router.push('pages/detail/detail')">案例详情</button>
+		<button @click="$router.push('pages/uni-style/uni-style')">样式详情</button>
+		<button @click="$router.push('pages/list/list')">List详情</button>
 		<!-- <navigator url="pages/detail/detail"><button type="default">详情</button></navigator> -->
 	</view>
 </template>
@@ -17,12 +18,24 @@
 				title: 'Hello'
 			}
 		},
-		onLoad() {
-
-		},
 		methods: {
 
+		},
+		// onLoad参数为上一个页面的对象数据，这2个触发1次
+		onLoad(options) {
+			console.log('index页面加载了',options)
+		},
+		onReady() {
+			console.log('页面初次渲染完成')
+		},
+		// show和hide 会多次触发
+		onShow(){
+			console.log('页面显示了')
+		},
+		onHide() {
+			console.log('页面隐藏了')
 		}
+		
 	}
 </script>
 

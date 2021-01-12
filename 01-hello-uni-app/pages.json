@@ -32,6 +32,16 @@
 			"style":{
 				"navigationBarTitleText":"uni-style详情"
 			}
+		},
+		{
+			"path":"pages/list/list",
+			"style":{
+				"navigationBarTitleText":"list详情",
+				// 是否监听下拉刷新
+				"enablePullDownRefresh":true,
+				// 触底距离
+				"onReachBottomDistance":50
+			}
 		}
 	],
 	"globalStyle": {
@@ -85,6 +95,10 @@
 			{
 				"name":"样式页面",
 				"path":"pages/uni-style/uni-style"
+			},
+			{
+				"name":"List页面",
+				"path":"pages/list/list"
 			}
 		]
 	}
